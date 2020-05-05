@@ -1,0 +1,306 @@
+html {
+  font-size: 15px; /*Important*/
+ }
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 23px; /*Modificar esto Cuando el navbar se agrande*/
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+br {
+  width: 15px;
+}
+
+
+
+
+/*Estilos bloque bienvenidos*/
+
+
+.navbar-light .navbar-brand {
+/*  font-size: 1.3rem; Tamaño de las letras*/
+  text-transform: uppercase; }
+
+.navbar-toggler {
+  color: #fff !important; }
+
+
+.bg-dark {
+    background-color: #343a40 !important; /*Color de las letras del navbar responsive*/
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;     /*Centra el navbar en dispositivo menores de 600px y lo hace mayuscula*/
+  text-align: center;
+  padding: 0.4rem;
+  text-transform: uppercase; 
+}
+
+.navbar-dark .navbar-nav .form-inline {
+  text-align: center;  /*Centra el form*/
+}
+
+.carousel-indicators li {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    /* agregar esto     "border-radius: 10px;" para q el selector se haga circular*/
+    };  /*Control de los indcadores del caurusel modificar con cuidado*/
+
+
+.navbar-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    /* flex-direction: column; */
+    padding-left: ;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+
+
+.navbar-light .navbar-nav .nav-link {
+  text-align: center;
+  padding: 0.4rem;
+  text-transform: uppercase; }
+
+
+
+.carousel-item h5 {    /*Color de los titulos en el carrusel*/
+  color: black;
+  font-size: 50px;
+}
+
+.carousel-item p {    /*Color de los Parrafos en el carrusel*/
+  color: black;
+  font-size: 25px;
+}
+
+.carousel-control-prev:focus, .carousel-control-prev:hover {
+  color: white;
+  background: rgba(49, 33, 32, 0.4);
+   }   /*Efecto de los botones en el carrusel*/
+
+.carousel-control-next:focus, .carousel-control-next:hover {
+ color: white;
+ background: rgba(49, 33, 32, 0.4); 
+} 
+
+
+
+.beneficios {
+  background: #000000;
+  color: #ffffff;
+  text-align: center; /*El color de la seccion despues del carrusel*/
+}
+
+
+#carouselExampleCaptions {
+  background-size: cover;
+ }
+
+
+.carousel-control-next:focus, .carousel-control-next:hover {
+ color: white;
+ background: rgba(49, 33, 32, 0.5); 
+} 
+
+
+
+.navbar-expand-lg img {
+  height: 90px;
+  width: 190px;
+}
+
+
+
+
+.beneficios .fa {
+  color: #fff;         /*Tamaño de los iconos de la seccion beneficios*/
+  font-size: 6rem; }
+
+
+.progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;  /*Modificacion de las barras*/
+    font-size: 0.75rem;
+    background-color: #ffffff;
+    border-radius: 0.25rem;
+}
+
+.row .col-md-6 img {
+  text-align: center;
+  height: auto;
+  max-width: 100%;  /*Centra el row*/
+  vertical-align: top;
+}
+
+.row .col-md-2 img {
+    /* height: auto; */
+    width: 100px;
+}
+
+.row {
+  text-align: center;
+}
+
+
+.ultimos-proyectos {
+  background: #f6f5fa; /*Color del secion ultimos proyectos*/
+}
+
+
+.wpb_wrapper .vc_figure {
+  width: auto;
+}
+
+
+.ultimos-proyectos a {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 1.5rem; }
+
+
+ .navbar-collapse {
+  flex-grow: 1;
+}
+
+
+
+
+.card {
+  text-align: center;
+  width: 100px;   /*Centra y hace el tamaño de la carta*/
+}
+
+.icon {
+  width: 20px;   /*Tamaño de los iconos de las redes sociales*/
+  padding: 1px;
+  margin: 1px;
+  display: inline-block;
+}
+
+
+
+.footer a {
+    color: #212529; /*Color de las "a" en el pie de pagina*/
+}
+
+.footer .row {
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+/*Los Media Queries*/
+
+
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px; }
+
+  #menuprincipal {
+    clear: inherit; }
+
+    .btn .btn-outline-success {
+      text-align: center;
+      position: center;
+
+    }
+
+      }
+
+
+
+/*Efecto del Navbar*/
+
+.navbar-dark .navbar-nav .open > .nav-link, .navbar-dark .navbar-nav .open > .nav-link:focus, .navbar-dark .navbar-nav .open > .nav-link:hover, .navbar-light .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .active > .nav-link:focus, .navbar-dark .navbar-nav .active > .nav-link:hover, .navbar-dark .navbar-nav .nav-link.open, .navbar-dark .navbar-nav .nav-link.open:focus, .navbar-dark .navbar-nav .nav-link.open:hover, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.active:focus, .navbar-dark .navbar-nav .nav-link.active:hover {
+  color: rgba(255, 255, 255, 0.95);
+  background: #F05F40; }
+.navbar-dark .bg-dark:focus, .navbar-dark .bg-dark:hover {
+  color: rgba(255, 255, 255, 0.98); }
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: white;
+  background: #F05F40; }
+
+
+
+
+
+
+
+
+
+
+
+
+.card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(195, 161, 39, 0.87);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.inicio {
+    background: url(../images/background.jpg);
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.btn-primary {
+  background-color: #F05F40;
+  border-color: #b93e24;   /*Cambia el borde y el color del boton y lo hace en mayuscula al pasar sobre el */
+  -webkit-transition: all .5s ease;
+          transition: all .5s ease;
+  text-transform: uppercase; }
+
+
+
+
+
+  @media (max-width: 500px) {
+
+      .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 150px;
+   padding-bottom: 50px;
+}  
+
+     }
+
+
+
+
+
+
+
+
+
+
+/*# sourceMappingURL=estilos.css.map */
